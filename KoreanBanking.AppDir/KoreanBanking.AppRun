@@ -1,0 +1,7 @@
+#!/bin/sh
+
+APP_DIR=`dirname $0`
+APP_DIR=`cd "$APP_DIR";pwd`
+
+KBANKINGRUNTIME="$APP_DIR/runtime"; export KBANKINGRUNTIME
+exec "$APP_DIR/" "$@"
